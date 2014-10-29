@@ -7,8 +7,14 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
 
-Todo.create(title: "Wash dishes")
-Todo.create(title: "Visit dentist on Monday", notes: "Scheduled time is 9am.")
-Todo.create(title: "Call bank about transfer", notes: "It's been  3 days and transfer hasn't been done.")
-Todo.create(title: "Watch football", notes: "If we lose again, the manager might get sacked!")
-Todo.create(title: "Register for new Tealeaf course")
+# Todo.create(title: "Wash dishes")
+# Todo.create(title: "Visit dentist on Monday", notes: "Scheduled time is 9am.")
+# Todo.create(title: "Call bank about transfer", notes: "It's been  3 days and transfer hasn't been done.")
+# Todo.create(title: "Watch football", notes: "If we lose again, the manager might get sacked!")
+# Todo.create(title: "Register for new Tealeaf course")
+
+
+list = [["Study...","HARD"],["Prepare Railsy Talk","after core hrs"],["Go home","Sleep"]]
+list.each do |title,note|
+  Todo.create(title: title, notes: note)
+end
